@@ -230,7 +230,11 @@ letter-spacing: 0%;
     display: none;
 }
 @media screen and (max-width: 576px) {
-    .skills-container , .resume-container, footer {
+    .skills-container ,
+    .resume-container,
+    .footer,
+    .about-items
+       {
         flex-direction: column;
     }
     .experiance-title {
@@ -240,7 +244,7 @@ letter-spacing: 0%;
         letter-spacing: 0%;
         color: rgb(71, 71, 71);
         }
-    footer {
+    footer , .about {
         padding: 20px;
     }
     .resume {
