@@ -232,10 +232,16 @@ letter-spacing: 0%;
 @media screen and (max-width: 576px) {
     .skills-container ,
     .resume-container,
-    .footer,
-    .about-items
+    footer,
+    nav,
+    nav > ul,
+    .about-items,
+    .banner
        {
         flex-direction: column;
+    }
+    nav > ul {
+        gap: 10px;
     }
     .experiance-title {
         font-size: 20px;
@@ -245,13 +251,25 @@ letter-spacing: 0%;
         color: rgb(71, 71, 71);
         }
     footer , .about {
-        padding: 20px;
+        padding: 15px;
     }
     .resume {
         padding: 20px;
     }
     .footer-column {
         width: 100%;
+    }
+    .banner {
+        margin: 0;
+    }
+    .banner-content {
+        max-width: 576px;
+    }
+    .image-profile-pic {
+        width: 100%;
+    }
+    .header {
+        background-image: none;
     }
     footer input[type="text"] , footer input[type="email"] {
         width: calc( 100% - 40px );
@@ -268,4 +286,11 @@ letter-spacing: 0%;
         margin-bottom: 20px;
         }
     
+}
+
+/* tablet specific media query */
+@media screen and ( min-width: 576px) and (max-width: 990px){
+    .banner {
+        flex-direction: column;
+    }    
 }
